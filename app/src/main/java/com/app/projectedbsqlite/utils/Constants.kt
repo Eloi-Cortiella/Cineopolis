@@ -15,5 +15,5 @@ object Constants {
     const val COLUMN_TITOL = "titol"
     const val COLUMN_ANY = "any"
     const val COLUMN_DIRECTOR = "director"
-    const val COLUM_VALORACIO = "valoracio"
+    const val COLUMN_VALORACIO = "valoracio"
 }
