@@ -21,6 +21,24 @@ class BaseDeDades(val context: Context) : SQLiteOpenHelper(context, Constants.DA
                 "${Constants.COLUMN_VALORACIO} REAL)"
         db?.execSQL(createTable)
 
+        // Inserir dades de prova amb execSQL
+        val insertData = "INSERT INTO ${Constants.TABLE_PELICULES} " +
+                "(${Constants.COLUMN_TITOL}, ${Constants.COLUMN_ANY}, ${Constants.COLUMN_DIRECTOR}, ${Constants.COLUMN_VALORACIO}) VALUES " +
+                "('Inception', 2010, 'Christopher Nolan', 8.8), " +
+                "('The Matrix', 1999, 'The Wachowskis', 8.7), " +
+                "('Interstellar', 2014, 'Christopher Nolan', 8.6)"
+        db?.execSQL(insertData)
+
+        // Inserir dades de prova amb ContentValues
+        /*
+        val pelicula = ContentValues().apply {
+            put(Constants.COLUMN_TITOL, "The Dark Knight")
+            put(Constants.COLUMN_ANY, 2008)
+            put(Constants.COLUMN_DIRECTOR, "Christopher Nolan")
+            put(Constants.COLUMN_VALORACIO, 9.0)
+        }
+        db?.insert(Constants.TABLE_PELICULES, null, pelicula)
+         */
     }
 
     override fun onUpgrade(
