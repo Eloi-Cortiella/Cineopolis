@@ -3,14 +3,6 @@ package com.app.projectedbsqlite
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import com.app.projectedbsqlite.data.BaseDeDades
 import com.app.projectedbsqlite.model.Pelicula
 import com.app.projectedbsqlite.utils.Constants
@@ -72,18 +64,4 @@ class MainActivity : ComponentActivity() {
         cursor.close()
         Log.d(TAG, "Càrrega de pel·lícules finalitzada")
     }
-}
-
-
-
-/**
- * Funció que defineix el tema visual de l'aplicació
- * @param content Contingut que s'ha de mostrar amb aquest tema
- */
-@Composable
-fun ProjecteDBSQLiteTheme(content: @Composable () -> Unit) {
-    MaterialTheme(
-        colorScheme = lightColorScheme(),
-        content = content
-    )
 }
