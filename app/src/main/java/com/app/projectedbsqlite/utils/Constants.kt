@@ -5,6 +5,7 @@ package com.app.projectedbsqlite.utils
  * Dintre de la taula tenim les columnes: DATABASE_NAME (nom de la base de dades), DATABASE_VERSION (versió de la base de dades),
  * TABLE_PELICULES (el nom de la taula), COLUM_ID (id de la taula), COLUMN_TITOL (titol de la taula), COLUMN_ANY (any de la pel·lícula),
  * COLUMN_DIRECTOR (nom del director), COLUMN_VALORACIO (valoració de la pel·lícula).
+ * COLUMN_VALORACIO (valoracio de la pel·lícula)
  */
 object Constants {
     const val DATABASE_NAME = "PeliculesDB"
