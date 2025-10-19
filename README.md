@@ -44,6 +44,10 @@ Aquesta activitat té com a objectiu crear una aplicació Android simple que emm
 
 ## Resultats finals obtinguts al logcat:
 
+Aqui es poden veure els resultats obtinguts al logcat, on es notifica cada acció realitzada a la base de dades, com la creació de la taula, la inserció de registres i la recuperació de dades.
+
+Al final es pot veure que ens notifica de que la càrrega de dades ha estat correcta.
+
 ![img_3.png](app/src/main/java/doc/img_3.png)
 
 ## Link d'acces a la documentació realitzada amb figma:
